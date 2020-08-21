@@ -26,11 +26,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
 
+A. JSON Web Tokens are not encrypted but allow for better scaling as the auth is held on the client side. While Sessions are more secure since they are held on the database, but would not be practical if an application scaled up dramatically
+
 2. What does `bcrypt` do to help us store passwords in a secure manner.
+
+A. Bcrypt hashes the password by reorganizing/replacing the characters an enormous amount of times until the final result is so far removed from the original string that some degree of security
 
 3. How are unit tests different from integration and end-to-end testing.
 
+A. Unit testing is done on a single isolated entity of the code, such as a single function. While integration would be testing functions against each other, and end-to-end would be an entire application process such as a CREATE/DELETE request.
+
 4. How _Test Driven Development_ changes the way we write applications and tests.
+
+A. Test Driven Development greatly increases both the stability of an app as well as the development time. You would see a positive correlation between the practicality of TDD and an app’s scale/complexity. It was mentioned that in some cases, the tests can be written before the code is written, I still do not understand how this would be practical.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
