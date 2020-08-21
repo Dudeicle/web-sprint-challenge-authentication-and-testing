@@ -24,7 +24,7 @@ module.exports = (req, res, next) => {
 	} else {
 		res.status(402).json({ message: "Please provide credentials" });
 	}
-};
+}; // WORKING
 
 //custom middleware from previous work for reference
 

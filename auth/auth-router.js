@@ -33,7 +33,7 @@ router.post("/register", (req, res) => {
 			message: "Please provide username and password",
 		});
 	}
-});
+}); // WORKING
 
 // LOGIN AN EXISTING USER
 router.post("/login", (req, res) => {
@@ -65,7 +65,7 @@ router.post("/login", (req, res) => {
 			message: "Please provide username and password!",
 		});
 	}
-});
+}); // WORKING
 
 function signToken(user) {
 	const payload = {
@@ -84,3 +84,6 @@ function signToken(user) {
 }
 
 module.exports = router;
+
+// token for user "brian" pass "12345"
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoxLCJ1c2VybmFtZSI6ImJyaWFuIiwiaWF0IjoxNTk4MDI1NzU3LCJleHAiOjE1OTgxMTIxNTd9.o7xkG4z0ZahKlfacpDSiCBghdKXenmA0NMUDNIzZT90
